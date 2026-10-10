@@ -1,0 +1,11 @@
+{
+  "name": "the-last-shift-rpg",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env server.mjs",
+    "check": "node --check dist/app.js && node --check dist/engine.js && node --check backend/deepseek.mjs && node --test tests/deepseek.test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
